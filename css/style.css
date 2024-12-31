@@ -1,13 +1,15 @@
 .new{
   margin:50px 60px;
   display:flex;
-  font-size:30px;
+  font-size:60px;
   letter-spacing:10px;
   color:red;
+  text-align:center;
 }
 .happy{
   margin:20px 10px;
   color: green;
+  text-align:center;
 }
 .num{
   color: orange;
@@ -61,8 +63,9 @@ body{
   }
 }
 .hap{
-  font-size:35px;
+  font-size:50px;
   margin-left:20px;
+  text-align:center;
 }
 
 
