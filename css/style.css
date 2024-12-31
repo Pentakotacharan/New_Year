@@ -57,7 +57,7 @@ body{
   }
   100%{
     transform: translateX(0px);
-    background:url("/css/icegif-131.gif");
+    background:url("icegif-131.gif");
   }
 }
 .hap{
