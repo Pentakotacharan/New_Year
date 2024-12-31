@@ -1,0 +1,68 @@
+.new{
+  margin:50px 60px;
+  display:flex;
+  font-size:30px;
+  letter-spacing:10px;
+  color:red;
+}
+.happy{
+  margin:20px 10px;
+  color: green;
+}
+.num{
+  color: orange;
+}
+.nem{
+  color:green;
+}
+.net{
+  color: red;
+}
+.not{
+  color: green;
+  
+  animation: num 4s linear 1 forwards;
+}
+@keyframes num{
+  0%{
+    transform: translateY(0);
+    opacity:1;
+  }
+   100%{
+     transform:translateY(-340px);
+     opacity:0;
+     
+   }
+}
+.nor{
+  color: pink;
+  margin-top:3px;
+  animation: nor 3s linear 1 forwards;}
+@keyframes nor{
+0%{transform: translateX(0);
+  opacity:0;
+  }
+  100%{
+  transform:translateX(-50px);
+  opacity:1;
+  }
+}
+body{
+ animation: back 5s linear forwards;
+}
+@keyframes back{
+  0%{
+    transform: translateX(0);
+    opacity:1;
+  }
+  100%{
+    transform: translateX(0px);
+    background:url("/css/icegif-131.gif");
+  }
+}
+.hap{
+  font-size:35px;
+  margin-left:20px;
+}
+
+
