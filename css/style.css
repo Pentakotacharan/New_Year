@@ -1,10 +1,11 @@
-.new{
+/* .new{
   margin:50px 60px;
   display:flex;
   font-size:60px;
   letter-spacing:10px;
   color:red;
   text-align:center;
+  position: relative;
 }
 .happy{
   margin:20px 10px;
@@ -36,19 +37,12 @@
      
    }
 }
-.nor{
-  color: pink;
-  margin-top:3px;
-  animation: nor 3s linear 1 forwards;}
-@keyframes nor{
-0%{transform: translateX(0);
-  opacity:0;
-  }
-  100%{
-  transform:translateX(-50px);
-  opacity:1;
-  }
-}
+
+
+.nor { color: pink; margin-top: 3px; animation: nor 3s linear 1 forwards; position: absolute;  } 
+@keyframes nor { 0% { transform: translateX(0); opacity: 0; } 100% { transform: translateX(-70px); opacity: 1; } }
+
+
 body{
  animation: back 5s linear forwards;
 }
@@ -60,12 +54,119 @@ body{
   100%{
     transform: translateX(0px);
     background:url("icegif-131.gif");
-  }
+}
 }
 .hap{
   font-size:50px;
   margin-left:20px;
   text-align:center;
 }
+.back{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+ */
 
+
+ @keyframes back {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    body{
+      background: url("icegif-131.gif");
+    }
+  }
+}
+
+.new {
+  margin: 50px 60px;
+  display: flex;
+  font-size: 60px;
+  letter-spacing: 10px;
+  color: red;
+  text-align: center;
+  position: relative; /* Ensures child absolute positions are relative to this container */
+}
+
+.happy {
+  margin: 20px 10px;
+  color: green;
+  text-align: center;
+}
+
+.num {
+  color: orange;
+}
+
+.nem {
+  color: green;
+}
+
+.net {
+  color: red;
+}
+
+.not {
+  color: green;
+  animation: num 4s linear 1 forwards;
+  position: relative;
+}
+
+@keyframes num {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-340px);
+    opacity: 0;
+  }
+}
+
+.nor {
+  color: pink;
+  margin-top: 3px;
+  animation: nor 3s linear 1 forwards;
+  position: absolute; /* Removes from normal flow */
+  right: 0; /* Start from the end */
+}
+
+@keyframes nor {
+  0% {
+    transform: translateX(70px); /* Start off-screen to the right */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+body {
+  animation: back 5s linear forwards;
+}
+
+@keyframes back {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    background: url("icegif-131.gif");
+  }
+}
+
+.hap {
+  font-size: 50px;
+  margin-left: 20px;
+  text-align: center;
+}
+html, body { height: 100%; width:100%; margin: 0; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0; /* Optional background color */ } 
+.back { display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center; }
 
