@@ -7,8 +7,8 @@ class Hello extends React.Component {
     <div className="num"><h1>2 </h1></div>
     <div className="nem"><h1>0 </h1></div>
     <div className="net"><h1>2 </h1></div>
-    <div className="not"><h1>4 </h1></div>
-    <div className="nor"><h1>5 </h1></div>
+    <div className="not"><h1>5 </h1></div>
+    <div className="nor"><h1>6 </h1></div>
     </div>
     </div>
     </div>)
